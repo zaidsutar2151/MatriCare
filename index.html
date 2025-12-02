@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriCare AI — Intelligent Maternal Monitoring System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MatriCare AI</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#intro"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#problem"><i class="fas fa-exclamation-triangle"></i> Problem</a></li>
+                <li><a href="#solution"><i class="fas fa-lightbulb"></i> Solution</a></li>
+                <li><a href="#workflow"><i class="fas fa-project-diagram"></i> Workflow</a></li>
+                <li><a href="#tech"><i class="fas fa-code"></i> Tech</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-icon">
+                <i class="fas fa-user-nurse"></i>
+            </div>
+            <h1>MatriCare AI</h1>
+            <p>AI-Based Prediction and Continuous Monitoring of Labour-Related Complications</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Live</h3>
+                    <p>Monitoring</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Predictions</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Life-Saving</h3>
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-info-circle section-icon"></i>
+            <h2>About the Project</h2>
+        </div>
+        <div class="content-box">
+            <p>
+                MatriCare AI is a dual-module intelligent healthcare system designed to assist doctors and nurses during pregnancy and labor.
+                It continuously monitors maternal parameters in real-time using sensors and provides AI-driven suggestions for potential complications.
+            </p>
+        </div>
+    </section>
+
+    <section id="problem" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-exclamation-triangle section-icon"></i>
+            <h2>The Problem</h2>
+        </div>
+        <div class="problem-grid">
+            <div class="problem-card">
+                <div class="problem-icon">
+                    <i class="fas fa-skull-crossbones"></i>
+                </div>
+                <h3>800+</h3>
+                <p>Women die <strong>every day</strong> due to preventable pregnancy and childbirth complications (WHO, 2023)</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>94%</h3>
+                <p>Of maternal deaths occur in <strong>low and lower-middle income countries</strong></p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>97 per 100K</h3>
+                <p>India's maternal mortality ratio — still <strong>above the UN SDG goal of 70</strong></p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">
+                    <i class="fas fa-procedures"></i>
+                </div>
+                <h3>75%</h3>
+                <p><strong>Hemorrhage, hypertension, and infection</strong> account for nearly 75% of all maternal deaths</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <h3>60-70%</h3>
+                <p>Of rural hospitals <strong>lack continuous monitoring systems</strong> for mothers during labor</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-lightbulb section-icon"></i>
+            <h2>Our Solution</h2>
+        </div>
+        <div class="content-box">
+            <p>
+                MatriCare AI bridges the gap between real-time maternal monitoring and intelligent clinical decision support using two integrated modules:
+            </p>
+        </div>
+
+        <div class="modules">
+            <div class="module">
+                <div class="module-header">
+                    <div class="module-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Continuous Monitoring Module</h3>
+                    <span class="badge">Automatic</span>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Collects data automatically from sensors</li>
+                    <li><i class="fas fa-check-circle"></i> Tracks 8 vital parameters: BP (Sys/Dia), HR, Temp, SpO₂, RR, FHR, Toco</li>
+                    <li><i class="fas fa-check-circle"></i> Processes live input through an ML model for instant status prediction (Stable / Moderate / Critical)</li>
+                    <li><i class="fas fa-check-circle"></i> Displays data on a live dashboard using charts and color-coded alerts</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <div class="module-header">
+                    <div class="module-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Diagnostic & Suggestion Module</h3>
+                    <span class="badge">LLM-Powered</span>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Accepts 19 manually entered maternal parameters</li>
+                    <li><i class="fas fa-check-circle"></i> Classifies condition using an ML model</li>
+                    <li><i class="fas fa-check-circle"></i> Applies an LLM trained on clinical rule data (from <em>final data.xlsx</em>)</li>
+                    <li><i class="fas fa-check-circle"></i> Generates a detailed analysis including:
+                        <ul class="sub-list">
+                            <li><i class="fas fa-angle-right"></i> <strong>Future Complications</strong></li>
+                            <li><i class="fas fa-angle-right"></i> <strong>Basic Actions</strong> (for nurses)</li>
+                            <li><i class="fas fa-angle-right"></i> <strong>Advanced Actions</strong> (for doctors)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-project-diagram section-icon"></i>
+            <h2>Workflow</h2>
+        </div>
+        <div class="content-box">
+            <p>The workflow of MatriCare AI includes data collection, continuous analysis, AI inference, and actionable suggestions.</p>
+        </div>
+        <div class="workflow-steps">
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <i class="fas fa-sensor"></i>
+                <h4>Data Collection</h4>
+                <p>Gathering vital parameters</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <i class="fas fa-chart-line"></i>
+                <h4>Analysis</h4>
+                <p>Real-time processing</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <i class="fas fa-brain"></i>
+                <h4>AI Inference</h4>
+                <p>ML model prediction</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <i class="fas fa-clipboard-check"></i>
+                <h4>Action</h4>
+                <p>Clinical suggestions</p>
+            </div>
+        </div>
+        <img src="workflow-diagram.png" alt="MatriCare AI Workflow Diagram" class="workflow-image">
+    </section>
+
+    <section id="facts" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-industry section-icon"></i>
+            <h2>Market Insights & Existing Systems</h2>
+        </div>
+        <div class="content-box">
+            <p>Several global systems focus on fetal or maternal monitoring but with limited AI integration:</p>
+        </div>
+        <div class="market-grid">
+            <div class="market-card">
+                <i class="fas fa-wifi"></i>
+                <h4>Keyar CM Beltless Patch</h4>
+                <p>Wireless fetal ECG & uterine contraction monitoring</p>
+            </div>
+            <div class="market-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Philips Avalon CL</h4>
+                <p>Cordless fetal/maternal monitor allowing mobility during labor</p>
+            </div>
+            <div class="market-card">
+                <i class="fas fa-stethoscope"></i>
+                <h4>GE Corometrics 170</h4>
+                <p>Non-invasive continuous maternal-fetal monitor</p>
+            </div>
+            <div class="market-card">
+                <i class="fas fa-syringe"></i>
+                <h4>VitalTrace DelivAssure</h4>
+                <p>Lactate-based microneedle sensor detecting fetal distress</p>
+            </div>
+            <div class="market-card">
+                <i class="fas fa-cloud"></i>
+                <h4>NEC iCTG Wearable</h4>
+                <p>Cloud-connected fetal monitoring for remote supervision</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="future" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-rocket section-icon"></i>
+            <h2>Future Scope</h2>
+        </div>
+        <div class="future-grid">
+            <div class="future-card">
+                <div class="future-icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h4>Voice Assistant</h4>
+                <p>Enable hands-free operation for doctors and nurses with real-time voice alerts and AI guidance</p>
+            </div>
+            <div class="future-card">
+                <div class="future-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Mobile Application</h4>
+                <p>Develop a companion app for live patient updates and emergency alerts</p>
+            </div>
+            <div class="future-card">
+                <div class="future-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h4>Cloud Data Storage</h4>
+                <p>Centralized analytics for multiple hospitals and remote monitoring</p>
+            </div>
+            <div class="future-card">
+                <div class="future-icon">
+                    <i class="fas fa-chart-area"></i>
+                </div>
+                <h4>Predictive Analytics</h4>
+                <p>Long-term trend detection to prevent complications before they occur</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="fade-in">
+        <div class="section-header">
+            <i class="fas fa-code section-icon"></i>
+            <h2>Tech Stack</h2>
+        </div>
+        <div class="stack">
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h4>Frontend</h4>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h4>Backend</h4>
+                <p>Flask (Python)</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h4>Machine Learning</h4>
+                <p>Random Forest</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4>LLM Integration</h4>
+                <p>Gemma 2:2B with Ollama for offline inference + rule-based reasoning</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heartbeat"></i>
+                <h3>MatriCare AI</h3>
+                <p>Saving lives through intelligent maternal care</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#intro"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#problem"><i class="fas fa-chevron-right"></i> Problem</a></li>
+                    <li><a href="#solution"><i class="fas fa-chevron-right"></i> Solution</a></li>
+                    <li><a href="#tech"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MatriCare AI | Designed for Smart Maternal Healthcare</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
